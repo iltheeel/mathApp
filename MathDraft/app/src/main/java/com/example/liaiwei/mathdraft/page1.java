@@ -3,31 +3,48 @@ package com.example.liaiwei.mathdraft;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class page1 extends AppCompatActivity {
 
-    private Button gobackHome;
-
+    private Button goToNext;
+    private boolean gotanswer = false;
+    private String datastr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page1);
+        datastr = getIntent().getStringExtra("datastr");
+        Log.d("page1", datastr);
 
-        gobackHome = (Button) findViewById(R.id.goHome);
-        gobackHome.setOnClickListener(new View.OnClickListener(){
+        goToNext = (Button) findViewById(R.id.NEXTPAGE);
+        goToNext.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                launchActivity();
+                if(!gotanswer) {
+                    Toast.makeText(getApplicationContext(), "Please choose an answer first", Toast.LENGTH_SHORT).show();
+                } else {
+                    launchActivity();
+                }
             }
         });
 
+    }
 
+    public void pickc(View v) {
+        gotanswer = true;
+        datastr = datastr+ "1";
+    }
+    public void pick(View v) {
+        gotanswer = true;
+        datastr = datastr+ "0";
     }
     private void launchActivity() {
-        Intent intent = new Intent(this, OpenPage.class);
+        Intent intent = new Intent(this, ending1.class);
         startActivity(intent);
     }
 
