@@ -1,50 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.liaiwei.mathdraft.ending1">
-
-    <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="3dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="3dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="2dp"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="2dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/string_story"
-                android:textSize="36sp"
-                tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="0dp" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="The end. you died. you missed x problems. view solutions below" />
 
-            <Button
-                android:id="@+id/reset"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="viewSolution"
+        android:text="view solutions" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="reset"
+        android:text="Play Again"
+        />
+
+            <ListView
+                android:id="@+id/problemlist"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="reset"
-                android:text="Play Again"
-                tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="447dp" />
+                android:layout_height="match_parent" />
+
+
         </LinearLayout>
-    </ScrollView>
-</android.support.constraint.ConstraintLayout>

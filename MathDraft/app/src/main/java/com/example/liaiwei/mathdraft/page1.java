@@ -1,5 +1,13 @@
 package com.example.liaiwei.mathdraft;
 
+/*
+*
+*    THIS CODE IS FOR SHOW
+*    DO NOT EDIT ANYTHING PLEASE
+*
+* */
+
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -38,13 +46,16 @@ public class page1 extends AppCompatActivity {
     public void pickc(View v) {
         gotanswer = true;
         datastr = datastr+ "1";
+        Toast.makeText(getApplicationContext(), "right answer", Toast.LENGTH_SHORT).show();
     }
     public void pick(View v) {
         gotanswer = true;
         datastr = datastr+ "0";
+        Toast.makeText(getApplicationContext(), "wrong answer", Toast.LENGTH_SHORT).show();
     }
     private void launchActivity() {
         Intent intent = new Intent(this, ending1.class);
+        intent.putExtra("datastr", datastr);
         startActivity(intent);
     }
 

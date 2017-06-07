@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    #open page activity text, please write an instructions manual
+    <string
+        name="open_story"
+        >Prologue:
+        >prologue text story here
+    </string>
+
+    #page 1 story, PLEASE FIX PI EQUATION THING
+    <string
+        name="page1_story"
+        >It’s a tedious life you’re living in your little town of Al Gebra. For as long as you can
+        remember, you’ve had the same routine; before dawn, you wake up, milk your family’s cow
+        Ahmes, and scatter a few natural numbers about the pasture for your chickens. By the time
+        the sun climbs above the horizon, you’re yawning, and it’s not because you’re tired. If
+        someone drew a vertical line down the plane of your life, it would hit you twice- you just
+        can’t function like this anymore.
+        \Seriously, if you have to derive the quadratic formula one more time, you might just go
+        the way of pi[FIX EQUATIONS]. It’s hard to be rational when the only new math you get comes
+        with the arrival of Euclid and Hipparchus’s Traveling Circles. Besides, even they just left
+        with their trigotigers and trapezoid artists, and they won’t be back for another year.
+	    Sighing, you remind yourself that at least your world is safe. You’ve got a system. Still,
+        your life is getting more and more boring more and more rapidly.
+    </string>
+
+    #page 2 story
+    <string name="page2_story"
+        >You’re sitting in the center of your family’s stem-and-leaf plot, scarfing down the same
+        lunch you eat every day, when you hear footsteps pounding down the road from town. “Listen,
+        he’s here!” It’s your friend Ada, and she’s still panting, having taken the trail at a
+        sprint. As soon as she catches her breath, she starts to bounce on her toes. You find your
+        head nodding up and down rapidly to follow her.
+        \“Who’s here?”
+        \“I thought he was a myth, but no, it’s him! Here and in the flesh!”
+        \“Okay, but who?”
+        \She takes a deep breath. “The integrator of integrals, the differentiator of derivators,
+        the calculator of calculus! And he’s here!”
+        \“So you’ve said,” you begin automatically, but then the news sinks in. “Hang on, you mean
+        to tell me that the Eminent Shay is here? In this town? In Al Gebra?”
+        \“Yes!” She starts to pull on your arm, yanking you towards the road, but you’re already
+        shaking your head.
+        \“There’s no way. Why would he be here?”
+        \“I don’t know, but you’ve got to come. I’ll show you. I promise!”
+
+    </string>
+
+</resources>
