@@ -54,7 +54,7 @@ public class page1 extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "wrong answer", Toast.LENGTH_SHORT).show();
     }
     private void launchActivity() {
-        Intent intent = new Intent(this, ending1.class);
+        Intent intent = new Intent(this, listvtest.class);
         intent.putExtra("datastr", datastr);
         startActivity(intent);
     }
